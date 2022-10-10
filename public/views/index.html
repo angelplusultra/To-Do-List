@@ -5,19 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/output.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
-    <div class="formCont">
-            <form method="post" action="list">
+<body >
+    <header class="flex justify-between text-red-100 font-Poppins mx-20 pt-10">
+       
+        <nav class="flex space-x-6">
+            <span>Log In</span><span>Sign Up</span><span>Donate</span>
+        </nav>
+        <h1 class=" text-2xl font-Poppins font-bold">2-Do</h1>
+    </header>
+
+
+
+
+
+    <main class="h-screen flex justify-center items-center flex-row space-x-80 text-red-100">
+
+    
+    <div class="formCont font-Poppins flex ">
+            <form class="flex flex-col text-center space-y-14" method="post" action="list">
+                <label for="Title of Task"> Title of Task</label>
                 <input placeholder="title" name="title" type="text">
-                <input placeholder="description" name="description" type="text">
+                <label for="Description"> Description</label>
+                <textarea placeholder="description" name="description" id="" cols="30" rows="5"></textarea>
+                <label for="Title of Task"> Date</label>
                 <input placeholder="date" name="date" type="date">
                 <button type="submit">Submit</button>
             </form>
     </div>
-    <div class="listCont">
-        <ul>
+    <div class="listCont max-w-3xl h-4/6  overflow-y-scroll ">
+
+        <ul class="flex flex-col space-y-11 font-Poppins">
           
            <li>
             <h1>Dummy Task </h1>
@@ -66,6 +86,7 @@
         </ul>
 
     </div>
+    </main>
     
 </body>
 <script src="../js/main.js"></script>
