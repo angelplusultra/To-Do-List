@@ -24,7 +24,7 @@
     <main class="h-screen flex justify-center items-center flex-row space-x-60 text-red-100">
 
     
-    <div class="formCont font-Poppins flex ">
+    <div class="formCont font-Poppins flex shadow-2xl  ">
             <form class="flex flex-col    gap-6 border/10 p-6 rounded-md w-96 bg-slate-900/50 "method="post" action="list">
                 <label class="font-Poppins text-xl " for="Title of Task"> Title of Task</label>
                 <input class="rounded bg-transparent border-b border-  p-2" placeholder="" name="title" type="text">
@@ -35,33 +35,39 @@
                 <button class="p-3 border w-9/12 self-center" type="submit">Submit</button>
             </form>
     </div>
-    <div class="listCont max-w-3xl h-4/6  overflow-y-scroll scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-slate-700 scrollbar-corner-rounded-md ">
-
-        <ul class="flex flex-col space-y-11 font-Poppins">
+    
+    <div class=" rounded-xl shadow-lg listCont p-10 max-w-3xl h-4/6  overflow-y-scroll scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-slate-700 scrollbar-corner-rounded-md ">
+       
+        
+        <ul class="flex flex-col space-y-12 font-Poppins leading-loose">
           
-           <li>
-            <h1>Dummy Task </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae necessitatibus eligendi porro laborum nisi rem quas culpa perspiciatis aliquid.</p>
-            <p>Deadline</p>
+           <li class=" pb-3">
+            <h1 class="font-Poppins font-bold text-lg">Dummy Task </h1>
+            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae necessitatibus eligendi porro laborum nisi rem quas culpa perspiciatis aliquid.</p>
+            <p class="mt-5">Deadline</p>
+            
             <span>10-25-2022</span>
+            <div class="flex justify-center items-center mt-7">
+                <div class="border-b w-full"></div>
+            </div>
             
             </li> 
            <li>
-            <h1>Thing to Do Errand </h1>
+            <h1 class="font-Poppins font-bold text-lg">Thing to Do Errand </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias velit numquam adipisci optio blanditiis odit nisi impedit vel facere. Nisi voluptates ipsa nemo ab qui minima accusamus fugiat dolorum.</p>
             <p>Deadline</p>
             <span>10-25-2022</span>
             
             </li> 
             <li>
-            <h1>Another Task </h1>
+            <h1 class="font-Poppins font-bold text-lg">Another Task </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae necessitatibus eligendi porro laborum nisi rem quas culpa perspiciatis aliquid.</p>
             <p>Deadline</p>
             <span>10-25-2022</span>
             
             </li> 
            <li>
-            <h1>Dummy Task </h1>
+            <h1 class="font-Poppins font-bold text-lg">Dummy Task </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae necessitatibus eligendi porro laborum nisi rem quas culpa perspiciatis aliquid.</p>
             <p>Deadline</p>
             <span>10-25-2022</span>
@@ -84,8 +90,10 @@
 
        
         </ul>
+       
 
     </div>
+    
     </main>
     
 </body>
