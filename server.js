@@ -3,6 +3,10 @@ const app = express()
 const mongoose  = require('mongoose')
 const bodyParser = require('body-parser')
 const port = 8000
+const path = require("path")
+
+
+
 const db = mongoose.connection
 require("dotenv").config();
 
@@ -10,9 +14,6 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
-
-
-
 
 const schema = new mongoose.Schema({
     title: String,
