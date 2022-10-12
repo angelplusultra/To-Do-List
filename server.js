@@ -57,6 +57,12 @@ mongoose
             res.redirect('/')
         })
         
+
+        app.post('/delete', async (req, res) => {
+            const title = req.body.title
+            console.log(req.body.title)
+            await Item.findOneAndDelete({title: title})
+        })
         
 
 		
