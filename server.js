@@ -35,7 +35,7 @@ mongoose
             
             const posts = await Item.find()
             res.render(__dirname + '/public/views/index', {
-                items: posts
+                items: posts.reverse()
             })
             //  res.send(posts)
 
@@ -62,6 +62,13 @@ mongoose
             const title = req.body.title
             console.log(req.body.title)
             await Item.findOneAndDelete({title: title})
+        })
+
+        app.post('/update', async (req, res) => {
+        const title = req.body.title
+        const desc = req.body.description
+
+        res.redirect('/')
         })
         
 
