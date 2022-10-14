@@ -82,20 +82,20 @@
     
     </main>
 
-    <div class="modal-container opacity-0 pointer-events-none flex items-center justify-center ">
+    <div class=" transition-all modal-container opacity-0 pointer-events-none flex items-center justify-center ">
         
         <div class="modal shadow-2xl bg-slate-700   rounded-lg ">
             <div class="exit flex items-center justify-end  ">
-                <img class="hover:bg-slate-400 p-2 rounded-full transition-all" width="35" src="../assets/reject.png" alt="">
+                <img id="exit" class="hover:bg-slate-400 p-2 rounded-full transition-all" width="35" src="../assets/reject.png" alt="">
             </div>
             
             
 
            <form class="update flex font-Poppins text-white items-center justify-center flex-col space-y-5 " method="post" action="update">
             
-            <input class="w-96 h-9 rounded-lg p-2 outline-none bg-slate-400 placeholder-gray-100 shadow-sm " placeholder="Title" name="title" type="text">
-            <textarea class=" shadow-xl p-4 bg-slate-400 outline-none rounded-lg update-desc placeholder-gray-100 " placeholder="Description" name="description" id="" cols="30" rows="10"></textarea>
-            <button class=" shadow-md bg-slate-400  w-1/2 h-9 rounded-md" type="submit">Submit</button>
+            <input id="newTitle" class="w-96 h-9 rounded-lg p-2 outline-none bg-slate-400 placeholder-gray-100 shadow-sm " placeholder="Title" name="newTitle" type="text">
+            <textarea id="newDesc" class=" shadow-xl p-4 bg-slate-400 outline-none rounded-lg update-desc placeholder-gray-100 " placeholder="Description" name="newDesc" id="" cols="30" rows="10"></textarea>
+            <button id="update" class=" shadow-md bg-slate-400  w-1/2 h-9 rounded-md" type="button">Submit</button>
            </form> 
         </div>
     </div>

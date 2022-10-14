@@ -65,10 +65,13 @@ mongoose
         })
 
         app.post('/update', async (req, res) => {
-        const title = req.body.title
-        const desc = req.body.description
+            const filter = {title: req.body.idTitle }
+            const update = {title: req.body.newTitle, content: req.body.newDesc }
+        await Item.findOneAndUpdate(filter, update )
 
-        res.redirect('/')
+        console.log(req.body)
+
+       
         })
         
 
