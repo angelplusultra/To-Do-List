@@ -20,11 +20,5 @@ Dev Log 10/13/2022 7:13PM
 I got the update functionality to work, i yoinked the name of the item clicked within the event listener that triggers the form modal to appear, then included that into the update data json that gets delivered to the server via client js fetch API, which was then used to identify the item to be updated in MongoDB. The modal's exit button now works too with ease in-out transitions. Today has been  wildly succesful but still more to do as follows:
 
 -add date input in modal, format the data in "month-day-year" and send along with the update request
-- add responsiveness to the modal
+-add responsiveness to the modal
 -workshop the styling of the modal, not sure if im satisfied with appearance just yet
--add some sort of conditional appearance when there are no items to display
-
-
-Dev Log 10/25/2022 2:24AM
-
-Implemented MVC architecture, everything works as it did before. the UI still needs work, still looks like crap when the Todos list is empty an also need to set a fixed width for the container....CSS man, it never ends. Need to to add responsive and a date feature to update form as well as responsiveness.
