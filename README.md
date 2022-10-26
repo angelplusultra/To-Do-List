@@ -1,6 +1,8 @@
 # To-Do-List
-To-Do List CRUD Application made with MVC architecture made with:
+To-Do List CRUD Application made with MVC architecture
 
+
+Tech Stack:
 HTML <br />
 CSS <br />
 JavaScript <br />
