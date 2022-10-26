@@ -1,9 +1,10 @@
 # To-Do-List
-To-Do List Application with CRUD functionality made with:
+To-Do List CRUD Application made with MVC architecture made with:
 
 HTML <br />
 CSS <br />
 JavaScript <br />
+TypeScript <br />
 Tailwind <br />
 Express <br />
 EJS <br />
