@@ -1,5 +1,5 @@
 # To-Do-List
-To-Do List CRUD Application made with MVC architecture
+To-Do List CRUD Application made with MVC architecture.
 
 
 Tech Stack: <br />
@@ -29,6 +29,5 @@ MongoDB <br />
 4. Type npm run build-css to initiate the TailwindCSS compiler to watch for changes
 5. If the styling of the page on ```localhost:8000``` is messed up try hitting ```CTRL + S``` in the index.ejs file to automatically run the Tailwind compiler, refresh your browser and the styles should be normal.
  
-
 
 
